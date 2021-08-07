@@ -249,16 +249,16 @@ document.addEventListener('keydown', (event) => {
     const {x: xVel, y: yVel} = ball.velocity;
 
     if (event.keyCode === 87) {
-        Body.setVelocity(ball, {x: xVel, y: yVel-5 })
+        Body.setVelocity(ball, {x: xVel, y: yVel-1 })
     }
     if (event.keyCode === 68) {
-        Body.setVelocity(ball, {x: xVel + 5, y: yVel })
+        Body.setVelocity(ball, {x: xVel + 1, y: yVel })
     }
     if (event.keyCode === 83) {
-        Body.setVelocity(ball, {x: xVel, y: yVel+5 })
+        Body.setVelocity(ball, {x: xVel, y: yVel+1 })
     }
     if (event.keyCode === 65) {
-        Body.setVelocity(ball, {x: xVel - 5, y: yVel })
+        Body.setVelocity(ball, {x: xVel - 1, y: yVel })
     }
 })
 
